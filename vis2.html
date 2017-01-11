@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Q.2</title>
+<link rel="stylesheet" type="text/css" href="vis.css">
+<a href="vis3.html">NEXT</a>
+<a href="vis1.html">PREVIOUS</a>
+</head>
+<style>
+
+.image{
+height:300px;
+width:300px;
+position:absolute;
+ left:100px;
+ top:200px;
+}
+
+.c{
+height:400px;
+width:550px;
+background-color:#1A5276;
+position:absolute;
+right:50px;
+top:100px;
+color:red;
+padding: 10px;
+    border: 5px solid black;
+    margin: 0; 
+	font-size:20px;
+}
+
+</style>
+<body>
+<div id="uni">
+<h2 id="que">Are the squares inside the blue and yellow squares all the same color?</h2>
+<div id="quediv"> </br> </br>
+</h3></div>
+<div id="b" style="display:none;" class="c"><h2>Bezold Effect</h2> </br>
+The smaller squares inside the blue and yellow squares are all the same color.</br>
+ They seem different (magenta and orange) because a color is perceived differently </br>
+ depending on its relation to adjacent colors </br>
+(here blue or yellow depending on the outer square).</br>
+
+</div>
+<div id="uni">
+<img src="assets/ColorIllusion.jpg" class="image">
+<button input type="button" onclick="myFunction()" id="demo">ANALYSIS</button>
+
+
+<script>
+function myFunction(){
+
+document.getElementById('b').style.display="block";
+}
+</script>
+</body>
+</html>

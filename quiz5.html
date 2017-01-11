@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<a href="quiz6.html">NEXT</a>
+<link rel="stylesheet" type="text/css" href="last.css">
+<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+</head>
+<style>
+
+</style>
+<body>
+<h1 class="h" style="font-family: 'Bad Script', cursive;
+			 font-size:40px;"> Now , cross your legs </h1>
+
+<h1 class="i" style="font-family: 'Bad Script', cursive;
+			 font-size:40px;">Which one is on top? </h1>
+
+<button id = "b1" class="r" onclick="funct1()"> RIGHT </button>
+
+<button id = "b2" class="l" onclick="funct2()"> LEFT </button>
+
+<div id="b" style="display:none;" class="c">
+<p> Right side of the body is controlled by left side of the brain</p>
+
+</div>
+<button input type="button" onclick="myFunction()" id="demo"> Analysis </button>
+
+<script>
+var a1 = document.getElementById('b1');
+var a2 = document.getElementById('b2');
+function myFunction(){
+document.getElementById('b').style.display="block";
+}
+
+function funct1(){
+document.cookie="l7="+parseFloat(12.5);
+a1.disabled= true;
+a2.disabled= true;
+} 
+
+function funct2(){
+document.cookie="r7="+parseFloat(12.5);
+a1.disabled= true;
+a2.disabled= true;
+} 
+
+
+</script>
+</body>
+
+</html>

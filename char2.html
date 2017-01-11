@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="stylechar.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+
+<title>1</title>
+</head>
+
+<style>
+.a{
+position:absolute;
+right:200px;
+top:100px;
+border-radius:80%;
+height:500px;
+width:400px;
+}
+
+.a:hover{
+transform: scale(1.5,1.5);
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 	
+    typing 4s steps(30, end),
+    blink-caret .2s step-end infinite;
+	position:absolute;
+	left:500px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+</style>
+
+<body>
+<img src="Ramsay_S06E09_RESZIED_FOR_INFOBOX.jpg" class="a">
+<div class="typewriter">
+  <h1 style="color:white; font-size:40px;">RAMSAY BOLTON</h1>
+</div>
+<div class="b" style="font-family: 'Lobster Two', cursive; color:white; font-size:25px;
+text-align: justify;
+    text-justify: inter-word;
+	">
+	<div class="theory">
+Ramsay demonstrates a lack of morality while catering to more primal indulgences,
+ alongside a desire to see the other party's fear
+ to compliment his ability to have control,which is most important in his character.
+He has a pure predatory identity.His sadism is predictable-tortures the innocent to feel powerful.
+This priority makes him a less complex firgure with a far more rudimentary ideological heuristic.
+</div>
+<button class="disorder" onclick="fun()">ANTISOCIAL PERSONALITY DISORDER </button>
+<div style="display:none;" id="b">
+Antisocial personality disorder is a mental condition in which a person has 
+a long-term pattern of manipulating, exploiting, or violating the rights of others.
+ A person with antisocial personality disorder may: Be able to act witty and charming and Be good at flattery and manipulating 
+other people's emotions.
+Low amounts of Serotonin lead to increase in aggresive behaviour.
+</div>
+<script>
+function fun(){
+document.getElementById("b").style.display="block";
+
+
+}
+</script>
+</body>
+
+</html>

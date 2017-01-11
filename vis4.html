@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Q.2</title>
+<a href="vis5.html">NEXT</a>
+<a href="vis3.html">PREVIOUS</a>
+<link rel="stylesheet" type="text/css" href="vis.css">
+</head>
+<style>
+.image{
+height:300px;
+width:300px;
+position:absolute;
+ left:100px;
+ top:200px;
+}
+
+.c{
+height:400px;
+width:550px;
+background-color:#1A5276;
+position:absolute;
+right:50px;
+top:100px;
+color:red;
+padding: 10px;
+    border: 5px solid black;
+    margin: 0; 
+	font-size:20px;
+}
+
+</style>
+<body>
+<div id="uni">
+<h2 id="que">Do you see the Grey dots at the points of intersection ?</h2>
+<div id="quediv">
+<div id="b" style="display:none;" class="c"><h2>Hermann grid illusion</h2> </br>
+There are not gray dots in this grid.
+ However “ghostlike” gray blobs are perceived at the intersections of the white lines. </br>
+ The gray dots disappear when looking directly at an intersection. </br>
+ This illusion can be explained by a neural process happening in the visual system called</br>
+ <b>Lateral inhibition</b> </br>
+(the capacity of an active neuron to reduce the activity of its neighbors).</br>
+</div>
+</div>
+<img src="assets/hermann-grid-illusion-test.jpg" class="image">
+<button input type="button" onclick="myFunction()"id="demo">ANALYSIS</button>
+</div>
+<script>
+function myFunction(){
+document.getElementById('b').style.display="block";
+}
+</script>
+</body>
+</html>
+

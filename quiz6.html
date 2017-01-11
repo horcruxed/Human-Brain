@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<a href="projecthome1.php">Home Page</a>
+
+<link rel="stylesheet" type="text/css" href="last.css">
+<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+</head>
+<body>
+<h1 class="h" style="font-family: 'Bad Script', cursive;
+			 font-size:40px; color:white;"> Close an Eye . </h1>
+
+<h1 class="i" style="font-family: 'Bad Script', cursive;
+			 font-size:40px; color:white;">Which one did you close ? </h1>
+
+<button id = "b1" class="l" onclick="funct1()"> RIGHT </button>
+
+<button  id = "b2" class="r" onclick="funct2()"> LEFT </button>
+<p style = "color: white"> You can view your result later in the Analysis page</p>
+<div id="b" style="display:none;" class="c">
+<p> Right side of the body is controlled by left side of the brain</p>
+
+</div>
+<button input type="button" onclick="myFunction()" id="demo" > Analysis </button>
+
+<script>
+var a1 = document.getElementById('b1');
+var a2 = document.getElementById('b2');
+function myFunction(){
+document.getElementById('b').style.display="block";
+}
+
+function funct1(){
+document.cookie="l8="+parseFloat(12.5);
+a1.disabled= true;
+a2.disabled= true;
+} 
+
+function funct2(){
+document.cookie="r8="+parseFloat(12.5);
+a1.disabled= true;
+a2.disabled= true;
+} 
+
+
+</script>
+</body>
+
+</html>
